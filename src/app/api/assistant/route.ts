@@ -14,7 +14,7 @@ const openai = new OpenAI({
 });
 
 // 면접관 Assistant ID (사용자 지정 값)
-const ASSISTANT_ID = 'asst_h2mLBVQJ6O0CE9EOaaV2eClk';
+const ASSISTANT_ID = process.env.ASSISTANT_ID || 'asst_h2mLBVQJ6O0CE9EOaaV2eClk';
 
 /**
  * POST 요청 처리 - 스레드 생성 또는 메시지 전송
